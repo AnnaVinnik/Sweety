@@ -132,6 +132,7 @@
     background-color: var(--white);
     outline: none;
     color: var(--black);
+    padding-bottom: 13px;
 }
 
 .search-text:focus + .search-icon .search-icon-path{
