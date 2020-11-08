@@ -1057,12 +1057,18 @@
     margin-right: 7px;
 }
 
-.manufacturer .catalog-item {
+.manufacturer-catalog-item {
     border: 1px solid var(--smoke);
     height: 145px;
+    width: 220px;
     box-sizing: border-box;
     padding-top: 5px;
     padding-left: 5px;
+}
+
+
+.manufacturer-catalog-item:hover {
+    box-shadow: 0 0 10px var(--grey);
 }
 
 .grid-catalog {
@@ -1121,7 +1127,6 @@ aside {
     align-self: center;
     margin-top: -5px;
     margin-left: -5px;
-    border: 1px solid var(--smoke);
 }
 
 .catalog-item img {
