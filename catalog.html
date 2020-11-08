@@ -306,9 +306,58 @@
               </li>
             </ul>
             <aside class="filter">
-                <!-- Здесь будет форма -->
-                  <h2 class="filter-header">Фильтр:</h2>
-                  <h3>Цена:</h3>
+              <h2 class="filter-header">Фильтр:</h2>
+              <form action="https://echo.htmlacademy.ru" method="GET">
+                <fieldset class="filter-item">
+                  <legend>Цена:</legend>
+                  <div class="price-range-filter">
+                    <div class="filter-range-item">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min" tabindex="0"></div>
+                      <div class="toggle toggle-max" tabindex="0"></div>
+                    </div>
+                    <div class="filter-price-item">
+                      <input type="number" name="min-price" value="0">
+                      <input class="input-max-price" type="number" name="max-price" value="30000">
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="filter-item">
+                  <legend>Производители:</legend>
+                  <input type="checkbox" class="input-checkbox visually-hidden"  id="bosh" checked>
+                  <label for="bosch">
+                    Bosch
+                  </label>
+                  <input id="interskol" class="input-checkbox visually-hidden" type="checkbox">
+                  <label for="interskol">
+                    Интерскол
+                  </label>
+                  <input id="makita"  class="input-checkbox visually-hidden"type="checkbox" checked>
+                  <label for="makita">
+                    Makita
+                  </label>
+                  <input id="dewalt" class="input-checkbox visually-hidden"  type="checkbox">
+                  <label for="dewalt">
+                    Dewalt
+                  </label>
+                  <input id="hitachi" class="input-checkbox visually-hidden"  type="checkbox">  
+                  <label for="hitachi">
+                    Hitachi
+                  </label>
+                </fieldset>
+                <fieldset class="filter-item">
+                  <legend>Питание:</legend>
+                  <input class="input-radio visually-hidden" checked name="supply" id="battery" type="radio">
+                  <label for="battery">Аккумуляторные</label>
+                  <input class="input-radio battery-item visually-hidden" name="supply" id="network" type="radio">
+                  <label for="network">Сетевые</label>
+                </fieldset>
+                <fieldset class="filter-item">
+                  <input class="filter-button" type="submit" value="Показать">
+                </fieldset>
+              </form>
             </aside>
             <section class="pages">
               <ul class="pages">
