@@ -174,7 +174,7 @@
     color: var(--white);
     margin-left: -45px;
     padding: 9px;
-    padding-left: 40px;
+    padding-left: 43px;
     padding-right: 15px;
     align-self: start;
     justify-self: center;
@@ -187,7 +187,7 @@
     width: 14px;
     height: 16px;
     position: absolute;
-    left: 18px;
+    left: 21px;
     top: 13px;
     opacity: 0.3;
 }
@@ -213,7 +213,7 @@
     height: 15px;
     content: "";
     top: 13px;
-    left: 15px;
+    left: 12px;
     opacity: 0.3;
 }
 
@@ -261,7 +261,7 @@
 }
 
 .inner .header-middle {
-    padding-bottom: 20px;
+    padding-bottom: 23px;
 }
 
 .header-middle-description {
@@ -777,7 +777,7 @@
     height: 23px;
     border: 2px solid var(--grey);
     left: -35px;
-    top: 0;
+    top: -3px;
     box-sizing: border-box;
     border-radius: 3px;
 }
@@ -787,8 +787,8 @@
     position: absolute;
     width: 23px;
     height: 23px;
-    left: -32px;
-    top: 0;
+    left: -31px;
+    top: -2px;
     background-image: url(../img/checkbox-checked.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -798,6 +798,8 @@
     position: relative;
     margin-left: 35px;
     margin-top: 25px;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 .input-radio + label::before{
@@ -1264,6 +1266,29 @@ aside {
     font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
+.button-buy::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icon-cart.svg);
+    left: 24px;
+    top: 10px;
+    opacity: 0.3;
+}
+
+.button-buy::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background-color: var(--green-click);
+    border-radius: 3px;
+    bottom: -2px;
+    left: 0;
+    z-index: -1;
+}
+
 .button-buy:hover {
     background-color: var(--green-hover);
 }
@@ -1468,6 +1493,8 @@ aside {
     padding: 64px 20px 55px;
     margin-top: 55px;
     font-size: 13px;
+    line-height: 24px;
+    font-family: "PT Sans", "Tahoma", sans-serif;
 }
 
 .about-punchers p {
@@ -1480,6 +1507,8 @@ aside {
     margin-top: 0;
     font-size: 30px;
     font-weight: 400;
+    font-family: "Cuprum", "Tahoma", sans-serif;
+    margin-bottom: 30px;
 }
 
 .current-page {
