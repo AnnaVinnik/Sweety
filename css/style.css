@@ -848,6 +848,14 @@
     margin-top: 59px;
 }
 
+.promo .new::before {
+    top: 6px;
+}
+
+.promo .new::after {
+    top: 1px;
+}
+
 .promo-block {
     font-weight: bold;
     font-size: 24px;
@@ -870,10 +878,6 @@
     grid-template-rows: 1fr 1fr;
     padding-left: 23px;
     position: relative;
-}
-
-.promo-block-item .angle-new {
-    margin-top: 0;
 }
 
 .promo-block-item h2 {
@@ -941,6 +945,7 @@
     height: 236px;
     margin: 0;
     padding: 0;
+    background-color: var(grey);
 }
 
 .slider-item {
@@ -1223,13 +1228,14 @@ aside {
     margin-left: -20px;
 }
 
-.angle-new {
+.new::after {
+    content: "";
     font-size: 14px;
     line-height: 18px;
     color: var(--white);
     position: absolute;
     right: 0;
-    top: 0;
+    top: 0px;
     width: 65px;
     height: 65px;
     background-image: linear-gradient(45deg, 
@@ -1238,11 +1244,14 @@ aside {
     margin-top: -1px;
 }
 
-.angle-new-text {
+.new::before {
+    content: "new";
     transform: rotate(45deg);
     position: absolute;
+    right: 10px;
     top: 12px;
-    left: 30px;
+    color: var(--white);
+    z-index: 1;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
@@ -1458,9 +1467,10 @@ aside {
     line-height: 24px;
 }
 
-.contacts img {
+.contacts-img {
     margin-top: 20px;
     margin-bottom: 30px;
+    background-color: var(--beige);
 }
 
 .contacts-button {
