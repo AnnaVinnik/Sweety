@@ -1358,6 +1358,17 @@ aside {
     line-height: 30px;
     grid-row: 2/3;
     margin-top: 35px;
+    position: relative;
+}
+
+.tab::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 279px;
+    background-image: url(../img/shadow.svg);
+    top: -40px;
+    right: 0;
 }
 
 .tab-link {
