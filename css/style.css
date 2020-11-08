@@ -283,7 +283,7 @@
     color: var(--black);
     background-color: var(--white);
     grid-row: 1/2;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .sign-in {
@@ -359,10 +359,6 @@
 
 .name {
     margin-left: 48px;
-}
-
-.name:hover {
-    /* Меняется цвет иконки */
 }
 
 .my-orders {
@@ -490,7 +486,7 @@
     padding: 10px;
     width: 192px;
     box-sizing: border-box;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -547,7 +543,7 @@
     color: var(--basic-blue);
     padding: 27px 30px 30px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 30px;
     margin-bottom: 25px;
     margin-top: 0px;
@@ -566,7 +562,7 @@
 }
 
 .sort-header {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 13px;
     text-transform: uppercase;
     color: var(--black);
@@ -640,7 +636,7 @@
     margin: 0;
     margin-bottom: 13px;
     padding: 10px 12px 12px 18px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 13px;
     text-transform: uppercase;
     color: var(--black);
@@ -1022,7 +1018,7 @@
 .slider p {
     font-size: 18px;
     line-height: 24px;  
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     margin-top: 5px;
     padding-bottom: 16px;
@@ -1102,7 +1098,7 @@ aside {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 5px;
 }
 
