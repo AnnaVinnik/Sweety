@@ -104,6 +104,7 @@
     text-align: center;
     padding: 13px 0 7px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .logo::after {
