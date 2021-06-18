@@ -9,7 +9,7 @@
     --dark-blue: #293449;
     --charcoal: #1D2739;
     --green: #63A63E;
-    --green-hover: #5FBB2D;
+    --green-hover: #5fa838;
     --green-click: #518534;
     --red: #EE3643;
     --dark-red: #CA2C37;
@@ -117,9 +117,21 @@
     left: 0;
 }
 
+.logo:hover::after {
+    background-color: #702020;
+}
+
+.logo:hover {
+    background-color: var(--red-active);
+}
+
 .logo:active,
 .logo:focus {
-    background-color: var(--red-active);
+    background-color: var(--dark-red);
+}
+
+.logo:active path {
+    opacity: 0.5;
 }
 
 .search-text {
@@ -182,6 +194,8 @@
     position: relative;
 }
 
+
+
 .marker::before {
     content: "";
     background-image: url(../img/icon-bookmark.svg);
@@ -220,6 +234,11 @@
 
 .basket-with-goods {
     background-color: var(--red);
+}
+
+.marker:hover,
+.basket:hover {
+    background-color: var(--dark-blue);
 }
 
 .search-wrapper:hover::before,
